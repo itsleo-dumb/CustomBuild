@@ -17,7 +17,7 @@ dictConfig({
     'handlers': {'wsgi': {
         'class': 'logging.StreamHandler',
         'stream': 'ext://flask.logging.wsgi_errors_stream',
-        'formatter': 'default'
+        'formatter': 'default' 
     }},
     'root': {
         'level': os.getenv('CBS_LOG_LEVEL', default='INFO'),
@@ -364,4 +364,5 @@ def get_build_by_id(build_id):
     return jsonify(response), 200
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0', port=5000)
+
