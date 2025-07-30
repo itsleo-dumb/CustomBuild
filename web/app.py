@@ -59,7 +59,7 @@ builds_dict = {}
 REMOTES = None
 
 repo = ap_git.GitRepo.clone_if_needed(
-    source="https://github.com/ardupilot/ardupilot.git",
+    source="https://github.com/itsleo-dumb/ardupilot.git",
     dest=sourcedir,
     recurse_submodules=True,
 )
